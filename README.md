@@ -1,5 +1,4 @@
-# Coleccion-Excepciones
-CE-EXCEPCIONES
+# coleccion-excepciones
 coleccion de ejercicios: excepciones Enunciado de Ejercicios
 
 Los enfoques de bajo nivel: Banderas e interrupciones y tratamiento de los errores en lenguaje C:
