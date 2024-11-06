@@ -1,5 +1,5 @@
-#Enunciado de Ejercicios
-
+# Enunciado de Ejercicios
+https://github.com/a-navia/Coleccion-Excepciones.git
    ` Los enfoques de bajo nivel: Banderas e interrupciones y tratamiento de los errores en lenguaje C:
         Ejercicio: Implementa un programa en C++ que simule un sistema con banderas de error. Si ocurre un error, en lugar de lanzar una excepción, establece una bandera de error. Luego, comprueba regularmente la bandera de error para manejarla.
 
