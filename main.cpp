@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include <stdexcept>
+#include <fstream>
 
 #include "main.h"
 #include "EJ1/EJ1.h"
@@ -10,6 +11,8 @@
 #include "EJ3/EJ3.h"
 #include "EJ4/EJ4.h"
 #include "EJ5/EJ5.h"
+#include "EJ6/EJ6.h"
+#include "EJ7/EJ7.h"
 
 int main() {
 //EJ1
@@ -45,16 +48,20 @@ const int resultError = divideError(5, 0);
     }
 //EJ5
     try {
-        try {
-            EJ5::lanzaExcepcionEJ5();
-        }
-        catch (const std::runtime_error& e) {
-            std::cout << "Excepción capturada y manejada. Reactivando..." << std::endl;
-            throw; // Relanza la excepción
-        }
+        lanzaExcepcionEJ5();
+    } catch (const std::runtime_error& e) {
+        std::cout << "Excepcion capturada en main y manejada. Reactivando..." << std::endl;
+    }
+//EJ6
+    //lanzaExcepcionEJ6();
+//EJ7
+    std::ofstream file("archivo.txt");
+    try {
+        escribeEnArchivoEJ7(file);
     }
     catch (const std::runtime_error& e) {
-        std::cout << "Excepción reactivada capturada: " << e.what() << std::endl;
+        std::cout << "Excepción capturada en main: " << e.what() << std::endl;
     }
+    std::cout << "Fin del programa" << std::endl;
     return 0;
 }

@@ -7,5 +7,11 @@
 #include<stdexcept>
 
 void lanzaExcepcionEJ5() {
-    throw std::runtime_error("Error en la funciOn lanzaExcepcion");
+    try {
+        throw std::runtime_error("Error en la funcion lanzaExcepcionEJ5");
+    }
+    catch (const std::runtime_error& e) {
+            std::cout << "Excepcion reactivada capturada: " << e.what() << std::endl;
+        throw; // Relanza la excepción
+    }
 }

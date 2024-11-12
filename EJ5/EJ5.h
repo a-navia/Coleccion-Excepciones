@@ -7,9 +7,9 @@
 
 
 
-class EJ5 {
 
-};
+void lanzaExcepcionEJ5();
+
 
 
 
